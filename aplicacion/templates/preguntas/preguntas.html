@@ -1,0 +1,89 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+	<script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	<meta  content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0 ">
+	<meta charset="utf-8">
+		
+	
+<title>Preguntas </title>
+
+</head >
+
+<body class="todo" >
+	
+	<div class="row mx-md-n5" style="color: #4194DA ">
+				<div class="col-md-4 bg-dark">
+					
+				</div>
+				<div class="col-md-4 bg-dark">
+	<section class="color: #84F5EA ">
+		<div class="container text-center bg-dark ">
+			<div  style="font-style: italic">
+				<h1 class="titulo ">Encuestas</h1>
+			</div>			
+			<p class="sub">¿que tipo de pensamiento tienes?</p>
+
+		</div>
+			</div>
+				<div class="col-md-4 bg-dark">
+					
+				</div>
+		</div>
+		<br>	
+	</div>
+
+	</section>
+
+		<form action="" method="post" accept-charset="utf-8 " >
+		<form action="" method="post" accept-charset="utf-8 " >
+			<div class="container " style="font-style: italic" >
+			<div class="row">
+				
+					{% for pregunta in preguntas %}
+					<div class="col-md-4 card text-center ">
+						<div class="card-header">
+							<div class="font-style: italic" style="color: #79F3D9 ">
+								<h5 class="preguntas ">{{ pregunta.texto }}</h5>
+							</div>
+						</div>
+						<div class="card-body">
+								<fieldset id="group2">
+							{% for opcion in pregunta.opcion_set.all %}
+								<div class="row">
+									<div class="form-check">
+									  <input class="form-check-input" type="radio" name="pregunta-{{pregunta.id}}" id="pregunta-{{pregunta.id}}" value="{{opcion.id}}}">
+									  <label class="form-check-label" for="exampleRadios1">
+									    {{ opcion.texto }}
+									  </label>
+									</div>						    	
+								</div>
+							{% endfor %}
+							</fieldset>
+						</div>
+						
+					</div>
+					{% endfor %}
+		</div>
+		</div>
+		<<br>
+		<div class="row">
+				<div class="col-md-4">
+					
+				</div>
+				<div class="col-md-4 text-center">
+
+		{% csrf_token %}
+		<button type="button" class="btn btn-success">Guardar</button>
+		</div>
+				<div class="col-md-4">
+					
+				</div>
+	</form>
+</div>
+</body>
+</html>
