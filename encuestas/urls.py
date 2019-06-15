@@ -17,13 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from aplicacion.views import vista_preguntas
-from aplicacion.views import login
+from aplicacion import views
 
 urlpatterns = [
-    path('', login , name="login"),
     path('admin/', admin.site.urls),
-    path('admin/preguntas/', vista_preguntas),
+    path('admin/preguntas/', views.vista_preguntas, name="preguntas"),
+    path('login/', views.Resultado, name="resultado"),
 ]
 
 if settings.DEBUG:

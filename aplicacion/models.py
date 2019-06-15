@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class Pregunta(models.Model):
     texto = models.TextField(verbose_name='texto')
     activa = models.BooleanField(verbose_name='activa', default=True)

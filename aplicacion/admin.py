@@ -23,6 +23,7 @@ activar_pregunta.short_description = "Activar / Desactivar Pregunta"
 
 
 class PreguntaAdminView(admin.ModelAdmin):
+    
     inlines = (OpcionInline,)
     list_display = ('id', 'texto', 'opciones', 'activa', 'ver_resultados')
     fieldsets = (

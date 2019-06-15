@@ -8,7 +8,8 @@ def vista_preguntas(request):
     preguntas = Pregunta.objects.filter(activa=True)
     context = {'preguntas': preguntas}
     return render(request, 'preguntas/preguntas.html', context)
-    
 
-def login (request):
-    return render(request, "login.html", {} )
+def Resultado(request):
+    
+    return render(request,"login.html",{})
+
