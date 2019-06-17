@@ -78,20 +78,12 @@ WSGI_APPLICATION = 'encuestas.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+
+
 DATABASES = {
     'default': {
-        # MySQL database engine class.
-        'ENGINE': 'django.db.backends.mysql',
-        # MySQL database host ip.
-        'HOST': 'localhost',
-        # port number.
-        'PORT': '3306',
-        # database name.
-        'NAME': 'encuestas',
-        # user name.
-        'USER': 'root',
-        # password
-        'PASSWORD': 'orson1723',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -124,6 +116,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+
 
 LANGUAGE_CODE = 'es-CO'
 
