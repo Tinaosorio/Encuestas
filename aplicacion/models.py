@@ -11,7 +11,6 @@ class Pregunta(models.Model):
         verbose_name = 'Pregunta'
         verbose_name_plural = 'Preguntas'
 
-
 class Opcion(models.Model):
     numeral = models.CharField(verbose_name='numeral', max_length=2)
     texto = models.CharField(verbose_name='texto', max_length=300)
