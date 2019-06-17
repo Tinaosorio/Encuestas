@@ -123,6 +123,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
 LANGUAGE_CODE = 'es-CO'
 
 LANGUAGES = (
