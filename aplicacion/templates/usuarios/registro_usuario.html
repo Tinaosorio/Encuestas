@@ -1,0 +1,56 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+	<script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	<meta  content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0 ">
+	<meta charset="utf-8">
+		
+	
+<title>Preguntas </title>
+
+</head >
+
+<body class="todo" >
+	
+	<div class="row mx-md-n5" style="color: #4194DA ">
+				<div class="col-md-4 bg-dark">
+					
+				</div>
+				<div class="col-md-4 bg-dark">
+	<section class="color: #84F5EA ">
+		<div class="container text-center bg-dark ">
+			<div  style="font-style: italic">
+				<h1 class="titulo ">Encuestas</h1>
+			</div>			
+			<p class="sub">¿que tipo de pensamiento tienes?</p>
+
+		</div>
+			</div>
+				<div class="col-md-4 bg-dark">
+					
+				</div>
+		</div>
+		<br>	
+	</div>
+
+	</section>
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6">
+		<form action="" method="POST">
+			{{form.as_p}}		
+			{% csrf_token %}
+			<button type="submit" class="btn btn-success">Guardar</button>
+		</form>
+		
+	</div>	
+	<div class="col-md-3"></div>
+</div>
+		
+</div>
+</body>
+</html>

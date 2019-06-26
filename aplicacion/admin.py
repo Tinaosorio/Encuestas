@@ -1,12 +1,16 @@
 from django.contrib import admin
 from django.utils.html import format_html
 
-from aplicacion.models import Pregunta, Opcion
+from aplicacion.models import Pregunta, Opcion, TipoPregunta
+
+from django.contrib.admin import AdminSite
+
+admin.site.site_url = "/admin/preguntas/"
 
 
 class OpcionInline(admin.TabularInline):
     model = Opcion
-    extra = 1
+    extra = 0
 
 
 def activar_pregunta(modeladmin, request, preguntas):
@@ -27,7 +31,7 @@ class PreguntaAdminView(admin.ModelAdmin):
     inlines = (OpcionInline,)
     list_display = ('id', 'texto', 'opciones', 'activa', 'ver_resultados')
     fieldsets = (
-        ("Datos de la pregunta", {'fields': ('texto',)}),
+        ("Datos de la pregunta", {'fields': ('texto', 'tipo')}),
     )
     ordering = ('id',)
     actions = [activar_pregunta,]
@@ -44,7 +48,7 @@ class PreguntaAdminView(admin.ModelAdmin):
         cadena = ""
 
         for opcion in lista_opciones:
-            cadena = cadena + "<li><b>{0})</b> {1}".format(opcion.numeral,
+            cadena = cadena + "<li><b>{0})</b> {1}".format(opcion.tipo,
                                                            opcion.texto) + "</li>"
 
         cadena = "<ul>" + cadena + "</ul>"
@@ -54,3 +58,4 @@ class PreguntaAdminView(admin.ModelAdmin):
 
 
 admin.site.register(Pregunta, PreguntaAdminView)
+admin.site.register(TipoPregunta)
