@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dd34711-bed7-4d54-a530-75f0d5f93c80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aplicacion/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aplicacion/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/aplicacion/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aplicacion/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/aplicacion/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aplicacion/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aplicacion/templates/preguntas/preguntas.html" beforeDir="false" afterPath="$PROJECT_DIR$/aplicacion/templates/preguntas/preguntas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aplicacion/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/aplicacion/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encuestas/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/encuestas/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encuestas/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/encuestas/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -156,37 +148,12 @@
             <path>
               <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
               <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-              <item name="aplicacion" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-              <item name="aplicacion" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="preguntas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
               <item name="encuestas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
               <item name="encuestas" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
