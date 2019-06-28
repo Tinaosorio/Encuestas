@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3dd34711-bed7-4d54-a530-75f0d5f93c80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/aplicacion/analisis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mensajes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aplicacion/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/aplicacion/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aplicacion/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/aplicacion/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aplicacion/templates/preguntas/preguntas.html" beforeDir="false" afterPath="$PROJECT_DIR$/aplicacion/templates/preguntas/preguntas.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aplicacion/templates/preguntas/resultados.html" beforeDir="false" afterPath="$PROJECT_DIR$/aplicacion/templates/preguntas/resultados.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aplicacion/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/aplicacion/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encuestas/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/encuestas/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encuestas/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/encuestas/wsgi.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,94 +14,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aplicacion/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aplicacion/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/encuestas/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="161" selection-start-line="161" selection-end-line="161" />
-              <folding>
-                <element signature="e#310#319#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="400">
+              <caret line="140" column="23" lean-forward="true" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aplicacion/tests.py">
+        <entry file="file://$PROJECT_DIR$/encuestas/wsgi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="357">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <element signature="e#0#32#0" expanded="true" />
+                <element signature="e#225#234#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aplicacion/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aplicacion/analisis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mensajes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/encuestas/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aplicacion/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="189">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -135,7 +66,6 @@
       <list>
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/aplicacion/tests.py" />
-        <option value="$PROJECT_DIR$/encuestas/settings.py" />
         <option value="$PROJECT_DIR$/aplicacion/admin.py" />
         <option value="$PROJECT_DIR$/encuestas/urls.py" />
         <option value="$PROJECT_DIR$/mensajes.py" />
@@ -143,6 +73,8 @@
         <option value="$PROJECT_DIR$/aplicacion/models.py" />
         <option value="$PROJECT_DIR$/aplicacion/forms.py" />
         <option value="$PROJECT_DIR$/aplicacion/views.py" />
+        <option value="$PROJECT_DIR$/encuestas/settings.py" />
+        <option value="$PROJECT_DIR$/encuestas/wsgi.py" />
       </list>
     </option>
   </component>
@@ -162,36 +94,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
+              <item name="Encuestas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Encuestas" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Encuestas" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Encuestas" type="462c0819:PsiDirectoryNode" />
               <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-              <item name="aplicacion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-              <item name="aplicacion" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-              <item name="aplicacion" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="usuarios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="encuestas" type="b2602c69:ProjectViewProjectNode" />
-              <item name="encuestas" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -322,10 +231,41 @@
     <entry file="file://$PROJECT_DIR$/aplicacion/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/encuestas/wsgi.py">
+    <entry file="file://$PROJECT_DIR$/aplicacion/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        <state relative-caret-position="1071">
+          <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aplicacion/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aplicacion/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aplicacion/analisis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mensajes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -339,68 +279,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/aplicacion/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/encuestas/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="161" selection-start-line="161" selection-end-line="161" />
+        <state relative-caret-position="400">
+          <caret line="140" column="23" lean-forward="true" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/encuestas/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#310#319#0" expanded="true" />
+            <element signature="e#225#234#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aplicacion/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mensajes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aplicacion/analisis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="26" column="11" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/encuestas/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aplicacion/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="63" column="59" selection-start-line="63" selection-start-column="59" selection-end-line="63" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aplicacion/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aplicacion/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="54" column="52" selection-start-line="54" selection-start-column="52" selection-end-line="54" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="189">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>

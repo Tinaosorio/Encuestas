@@ -22,9 +22,20 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '305w7p0eb*xk-jh_8z+$l9zu*r$tq*qw0n=hht(8a+5idpva03'
+SECURE_SSL_REDIRECT = True
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_SECONDS = True
+SECURE_COOKIE_SECURE = True
+SECURE_HSTS_PRELOAD = True
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+SECURE_CONTENT_TYPE_NOSNIFF = True
+SECURE_BROWSER_XSS_FILTER = True
+X_FRAME_OPTIONS = 'DENY'
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -127,8 +138,6 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 
-
-
 LANGUAGE_CODE = 'es-CO'
 
 LANGUAGES = (
@@ -150,12 +159,13 @@ USE_TZ = False
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
+RUTA_SERVIDOR = '/var/www/Encuestas/'
+MEDIA_URL = '/media_cdn/'
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-)
+STATIC_ROOT = RUTA_SERVIDOR + "static_cdn/"
+MEDIA_ROOT = RUTA_SERVIDOR + "media_cdn/"
 
-STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn")
-MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR, "media_cdn")
+STATICFILES_DIRS = (
+   RUTA_SERVIDOR + "static",
+)
