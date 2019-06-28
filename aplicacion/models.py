@@ -61,6 +61,7 @@ class Estudiante(models.Model):
 
     nombre = models.CharField(max_length=100)
     apellido = models.CharField(max_length=100)
+    documento = models.CharField(max_length=15, unique=True)
     semestre = models.CharField(max_length=15, choices=SEMESTRES, default=I_SEMESTRE)
     programacion = models.CharField(max_length=3, choices=RESPUESTAS, default=SI)
     pregunta = models.ManyToManyField(Pregunta, through="PreguntaEstudiante")
@@ -71,6 +72,8 @@ class PreguntaEstudiante(models.Model):
     pregunta = models.ForeignKey(Pregunta, on_delete=models.CASCADE)
     respuesta = models.IntegerField()
 
+    def __str__(self):
+        return self.pregunta.texto + " " + str(self.respuesta)
     @classmethod
     def create(cls, estudiante, pregunta, respuesta):
         pregunta_estudiante = cls(estudiante=estudiante, pregunta=pregunta, respuesta=respuesta)

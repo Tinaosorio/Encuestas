@@ -1,1 +1,118 @@
-<h1>Ver resultados</h1>
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+	<script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+	<meta  content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0 ">
+	<meta charset="utf-8">
+		
+	
+<title>Preguntas </title>
+
+</head >
+
+<body class="todo" >
+	
+	<div class="row mx-md-n5" style="color: #4194DA ">
+				<div class="col-md-4 bg-dark">
+					
+				</div>
+				<div class="col-md-4 bg-dark">
+	<section class="color: #84F5EA ">
+		<div class="container text-center bg-dark ">
+			<div  style="font-style: italic">
+				<h1 class="titulo ">Resultados</h1>
+			</div>			
+			<p class="sub">¿que tipo de pensamiento tienes?</p>
+
+		</div>
+			</div>
+				<div class="col-md-4 bg-dark">
+					
+				</div>
+		</div>
+		<br>	
+	</div>
+
+	</section>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card text-center">
+				  <div class="card-header">
+				    Activo-Reflexivo
+				  </div>
+				  <div class="card-body">
+				    <h5 class="card-title">Interpretación</h5>
+				    <p class="card-text">{{ar}} {{tipo_ar}}</p>
+				    <p class="card-text">{{ mensaje_ar }}</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card text-center">
+				  <div class="card-header">
+				    Sensorial-Intuitivo
+				  </div>
+				  <div class="card-body">
+				    <h5 class="card-title">Interpretación</h5>
+				    <p class="card-text">{{si}} {{tipo_si}}</p>
+				    <p class="card-text">{{ mensaje_si }}</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card text-center">
+				  <div class="card-header">
+				    Visual-Verbal
+				  </div>
+				  <div class="card-body">
+				    <h5 class="card-title">Interpretación</h5>
+				    <p class="card-text">{{vv}} {{tipo_vv}}</p>
+				    <p class="card-text">{{ mensaje_vv }}</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card text-center">
+				  <div class="card-header">
+				    Secuencial-Global
+				  </div>
+				  <div class="card-body">
+				    <h5 class="card-title">Interpretación</h5>
+				    <p class="card-text">{{sg}} {{tipo_sg}}</p>
+				    <p class="card-text">{{ mensaje_sg }}</p>
+				  </div>
+				</div>
+			</div>
+		</div>
+		<br>
+
+		<form action="" method="POST">
+		<div class="row justify-content-md-center">	
+			{% csrf_token %}
+			<button type="submit" class="btn btn-success">Terminar</button>
+		</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
+

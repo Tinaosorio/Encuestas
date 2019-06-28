@@ -9,19 +9,18 @@ class EstudianteForm(forms.ModelForm):
         fields = [
             'nombre',
             'apellido',
+            'documento',
             'semestre',
             'programacion'
         ]
-        labels = [
-            'Nombre',
-            'Apellidos',
-            'Semestre',
-            'Le gusta la programacion?'
-        ]
+        labels = {
+            'programacion': '¿Le gusta la programacion?'
+        }
 
         widgets = {
             'nombre': forms.TextInput(attrs={'class': 'form-control'}),
             'apellido': forms.TextInput(attrs={'class': 'form-control'}),
+            'documento': forms.TextInput(attrs={'class': 'form-control', 'pattern': '[0-9]+'}),
             'semestre': forms.Select(attrs={'class': 'form-control'}),
             'programacion': forms.Select(attrs={'class': 'form-control'})
         }
