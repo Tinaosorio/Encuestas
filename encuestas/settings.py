@@ -94,7 +94,7 @@ DATABASES = {
         # user name.
         'USER': 'root',
         # password
-        'PASSWORD': 'orson1723',
+        'PASSWORD': '12345678',
     }
 
 }
