@@ -14,7 +14,7 @@
 
 </head >
 
-<body class="todo" >
+<body class="todo"  style="overflow-x: hidden" >
 	
 	<div class="row mx-md-n5" style="color: #4194DA ">
 				<div class="col-md-4 bg-dark">
@@ -44,8 +44,8 @@
 			<div class="row">
 				
 					{% for pregunta in preguntas %}
-					<div class="col-md-4 card text-center ">
-						<div class="card-header">
+					<div class="col-md-3  ">
+						<div class="card-header card text-center">
 							<div class="font-style: italic" style="color: #573fb5 ">
 								<h5 class="preguntas ">{{ pregunta.texto }}</h5>
 							</div>

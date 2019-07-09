@@ -1,9 +1,15 @@
 from django import forms
 
+from aplicacion.custom_error import DivErrorList
 from aplicacion.models import Estudiante
 
 
 class EstudianteForm(forms.ModelForm):
+
+    def __init__(self, *args, **kwargs):
+        kwargs.update({'error_class': DivErrorList})
+        super(EstudianteForm, self).__init__(*args, **kwargs)
+
     class Meta:
         model = Estudiante
         fields = [

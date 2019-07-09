@@ -52,7 +52,7 @@ def get_resultados(request):
             request.session.flush()
             return render(request, "preguntas/resultados.html", context)
         else:
-            return HttpResponseRedirect("/registro")
+            return HttpResponseRedirect("/")
     else:
         return HttpResponseRedirect("/registro")
 

@@ -29,19 +29,13 @@ activar_pregunta.short_description = "Activar / Desactivar Pregunta"
 class PreguntaAdminView(admin.ModelAdmin):
     
     inlines = (OpcionInline,)
-    list_display = ('id', 'texto', 'opciones', 'activa', 'ver_resultados')
+    list_display = ('id', 'texto', 'opciones', 'activa')
     fieldsets = (
         ("Datos de la pregunta", {'fields': ('texto', 'tipo')}),
     )
     ordering = ('id',)
     actions = [activar_pregunta,]
 
-    def ver_resultados(self, pregunta):
-        return format_html(
-            "<a href='/admin/Aplicacion/pregunta/grafica/?id_pregunta={0}' target='_self'> <input type='button' id='{0}' value='{1}' class='default resultados' style='height:22px;width: 90px;padding:1px 1px;'></a>",
-            pregunta.id, 'Resultados')
-
-    ver_resultados.short_description = 'Ver Resultados'
 
     def opciones(self, pregunta):
         lista_opciones = pregunta.opcion_set.all()
